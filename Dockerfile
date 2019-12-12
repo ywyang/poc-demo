@@ -1,4 +1,4 @@
-FROM alpine-java:jdk8u202
+FROM livingobjects/jre8
 VOLUME /tmp
 ADD target/app.jar app.jar
 RUN sh -c 'touch /app.jar'
